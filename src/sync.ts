@@ -16,8 +16,7 @@ export async function sync() {
     const ts = body.match(/\nts=(\d{10}(\.\d+)?)\n/)?.at(1)
     if (ts) {
       const minTs = Math.round(Number.parseFloat(ts) * 1000)
-      if (Number.isInteger(minTs))
-      cfg.minTs = minTs
+      if (Number.isInteger(minTs)) cfg.minTs = minTs
     }
   } catch (e) {
     console.error(e)

@@ -2,6 +2,7 @@
   "main": "src/index.ts",
   "dependencies": {},
   "devDependencies": {
+    "@ei/biome": "npm:@jsr/ei__biome",
     "@types/bun": "^1.2.22"
   }
 }

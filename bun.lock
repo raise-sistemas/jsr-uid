@@ -3,11 +3,14 @@
   "workspaces": {
     "": {
       "devDependencies": {
+        "@ei/biome": "npm:@jsr/ei__biome",
         "@types/bun": "^1.2.22",
       },
     },
   },
   "packages": {
+    "@ei/biome": ["@jsr/ei__biome@0.1.7", "https://npm.jsr.io/~/11/@jsr/ei__biome/0.1.7.tgz", {}, "sha512-RWVHqoloDEqgib8cRJsitX+twDKN1uooZE8lPwJ0kzPnYn10DcKKC1BpP/tqlxTokGoQX6NcbVp//0jJwteYdg=="],
+
     "@types/bun": ["@types/bun@1.2.22", "", { "dependencies": { "bun-types": "1.2.22" } }, "sha512-5A/KrKos2ZcN0c6ljRSOa1fYIyCKhZfIVYeuyb4snnvomnpFqC0tTsEkdqNxbAgExV384OETQ//WAjl3XbYqQA=="],
 
     "@types/node": ["@types/node@24.5.0", "", { "dependencies": { "undici-types": "~7.12.0" } }, "sha512-y1dMvuvJspJiPSDZUQ+WMBvF7dpnEqN4x9DDC9ie5Fs/HUZJA3wFp7EhHoVaKX/iI0cRoECV8X2jL8zi0xrHCg=="],

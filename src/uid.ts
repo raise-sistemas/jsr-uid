@@ -15,7 +15,9 @@ import { cfg } from "./cfg"
  */
 export function uid(now = Date.now()) {
   if (now < cfg.minTs) {
-    throw new Error(`A data ${new Date(now)} está no passado de ${new Date(cfg.minTs)}`)
+    throw new Error(
+      `A data ${new Date(now)} está no passado de ${new Date(cfg.minTs)}`
+    )
   }
   // incrementa o contador ao gerar 2 ids no mesmo milisegundo.
   cfg.counter = now === cfg.lastTs ? cfg.counter + 1 : 0
@@ -30,5 +32,5 @@ export function uid(now = Date.now()) {
   const id = (now39 | appId | workerId) + counter
   cfg.lastId = id
 
-  return id.toString()
+  return id.toString().padStart(20, "0")
 }

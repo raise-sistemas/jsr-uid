@@ -23,7 +23,7 @@ export const cfg = {
     // 11 bits 0-2047
     const bits = 0b11111111111
     workerId = id < 1 ? Math.round(id * bits) : id % (bits + 1)
-  }
+  },
 }
 // defaults
 cfg.appId = Math.random()

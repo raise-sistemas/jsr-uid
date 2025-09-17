@@ -9,4 +9,5 @@ test("mod exports all symbols", () => {
   expect(mod.cfg).toBeDefined()
   expect(mod.sync).toBeDefined()
   expect(mod.uid).toBeDefined()
+  expect(mod.extract).toBeDefined()
 })
