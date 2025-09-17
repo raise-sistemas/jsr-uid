@@ -13,7 +13,7 @@ import { cfg } from "./cfg"
  *                       11 bits(2047) workerId:11111111111|         |
  *                                  10 bits (1024) counter:1111111111|
  */
-export function uid(now = Date.now()) {
+export function uid(now: number = Date.now()): string {
   if (now < cfg.minTs) {
     throw new Error(
       `A data ${new Date(now)} está no passado de ${new Date(cfg.minTs)}`

@@ -1,8 +1,14 @@
+type Parts = {
+  timestamp: number,
+  appId: number,
+  workerId: number,
+  counter: number,
+}
 /**
  *
  * @param uid string
  */
-export function extract(uid: string) {
+export function extract(uid: string): Parts {
   const bint = BigInt(uid)
   const s = bint.toString(2).padStart(64, "0")
   const rx = /(\d{39})(\d{4})(\d{11})(\d{10})/g

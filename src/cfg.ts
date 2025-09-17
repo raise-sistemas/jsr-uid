@@ -1,7 +1,16 @@
 let appId = 0
 let workerId = 0
 
-export const cfg = {
+type CFG = {
+  lastId: bigint,
+  lastTs: number,
+  counter: number,
+  minTs: number
+  appId: number
+  workerId: number
+}
+
+export const cfg: CFG = {
   lastId: 0n,
   lastTs: 0,
   counter: 0,
