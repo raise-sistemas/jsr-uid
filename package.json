@@ -3,7 +3,6 @@
   "dependencies": {},
   "devDependencies": {
     "@ei/biome": "npm:@jsr/ei__biome",
-    "@types/bun": "^1.2.22",
-    "jsr": "^0.13.5"
+    "@types/bun": "^1.2.22"
   }
 }
